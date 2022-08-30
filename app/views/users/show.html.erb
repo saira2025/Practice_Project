@@ -1,0 +1,16 @@
+<div>
+    <h1> User: <%= @user.id%> </h1> 
+    <p>
+    <h3>Name:</h3><%= @user.first_name %>
+    <%= @user.last_name %> 
+    <br> <br>
+    <h3>Email:</h3><%= @user.email %>
+    </p>
+    <%= link_to "Create Posts",  new_user_post_path(@user)%>
+    <%= link_to "Show Posts" , user_posts_path(@user)%>
+    
+
+ 
+
+
+</div>
